@@ -1,5 +1,3 @@
-import { Demon } from "./models";
-
 import dotenv from "dotenv";
 dotenv.config();
 

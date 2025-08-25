@@ -1,6 +1,6 @@
 import express, { Application } from "express";
 import routes from "./routes";
-import { connectDB, Demon } from "./models";
+import { connectDB } from "./models";
 
 const app: Application = express();
 app.use(express.json());
