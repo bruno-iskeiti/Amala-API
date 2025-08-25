@@ -1,1 +1,1 @@
-<div style="color: red;"> Amala API </div>
+<div align="center"> Amala API </div>
