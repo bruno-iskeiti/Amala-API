@@ -4,9 +4,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 <br>&nbsp;
 </h2>
 
-<h2>Table of Contents :D</h2>
-<br>&nbsp;
-
+## Table of Contents
 * **What is Amala API?**
 * **Project Roadmap**
 * **More technical details**
