@@ -52,7 +52,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
       </table>
   </div>
 
-## Setup &nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue">
+<h2>Setup <img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue"></h2>
 First, be sure to have Docker installed! If you don't, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it.
 - Download the source code, direct on github or using: <br>
   `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`<br>
