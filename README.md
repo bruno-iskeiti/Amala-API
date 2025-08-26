@@ -1,5 +1,5 @@
 <h2 align="center">
-<img src="https://github.com/bruno-iskeiti/Amala-API/blob/050577deca60b4a524f4bfb612cf9c1abed7e529/public/images/logo.png" alt="project logo"> <br>
+<img src="https://github.com/bruno-iskeiti/Amala-API/blob/a4ef57403c275cc4ecaa50aa9e556972a98a1226/public/images/logo.png" alt="project logo"> <br>
 A fan-made <i>Shin Megami Tensei</i> REST API!
 <br>&nbsp;
 </h2>
