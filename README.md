@@ -13,7 +13,11 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 - [Trivia](#trivia)
 
 ## What is Amala API?
-  <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title may suggest, this project is a REST API for you to query information about the <i>Shin Megami Tensei</i> games'  characters. The idea of this project is to bring to SMT fans a resource to do cool stuff, just like pokémon fans with <a href="https://pokeapi.co">PokeAPI</a>. This is a very simple project written in <b>Typescript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is needed to do http <code>POST</code>, <code>PUT</code> and <code>DELETE</code> request; buuut, you can make as many <code>GET</code> requests as you like it!</div>
+  <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title may suggest, this project is a REST API for you to query information about the <i>Shin Megami Tensei</i> games'  characters. The idea of this project is to bring to SMT fans a resource to do cool stuff, just like pokémon fans with <a href="https://pokeapi.co">PokeAPI</a>. This is a very simple project written in <b>Typescript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is needed to do http <code>POST</code>, <code>PUT</code> and <code>DELETE</code> request; buuut, you can make as many <code>GET</code> requests as you like it!
+  </div>
+<br>
+
+> **BIG DISCLAIMER: as of I'm writing this, Amala API's Database only contains <i>Nocturne</i> data.**
 
 ## More technical details
   <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This is indeed a passion project, <b>but</b>, at the same time, one for my <i>portfolio</i> too :D. So... yeah, I think that it is a really good idea to show a little how the project was done to my (maybe) future employers.
@@ -63,3 +67,12 @@ First, be sure to have Docker installed! If you don't, click <a href="https://do
 - It will run serve at http://localhost:6585. Try it!<br>
 - Otherwise, if you want MariaDB, just use:<br>
 `$ makefile setup-mariadb`
+
+## FAQ
+> <i>Where does this data come from?</i>
+
+Scraping from <a href="#">MegaTen Wiki</a>, using a simple python scrapper (it's in the misc folder).
+
+> <i>Why does it has just the Nocturne version of the information?</i>
+
+The reason for the lack of other games information **(YET)** is simple: I'm a solo dev with a non-tech job. It is hard to maintain a project like this.
