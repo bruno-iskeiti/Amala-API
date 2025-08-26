@@ -20,7 +20,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 <h2>More technical details</h2>
   <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This is indeed a passion project, <b>but</b>, at the same time, one for my <i>portfolio</i> too :D. So... yeah, I think that it is a really good idea to show a little how the project was done to my (maybe) future employers.
-  <br>&nbsp;&nbsp;&nbsp;&nbsp;As stated in the last section, the technology stack used for this project is: <b>Express.js</b> as the backend framework, with the majority of the code written in <b>Typecript</b>, and, of course, running in the <b>Node.js</b> environment. I chose Express.js as the framework for its unopinionated nature and simplicity; and Typescript as the language because it gives way less headache than Javascript in runtime. The database running in the live version of this project is <b>MariaDB</b>, manipulated solely by the <b>Sequelize</b> ORM (<i>object relational mapper</i> &#128521). All of this is being mediated by a <b>Nginx</b> server working as a reverse proxy; both in a <b>Docker</b> container orchestrated by <b>Docker Compose</b>. So, in summary:
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;As stated in the last section, the technology stack used for this project is: <b>Express.js</b> as the backend framework, with the majority of the code written in <b>Typecript</b>, and, of course, running in the <b>Node.js</b> environment. I chose Express.js as the framework for its unopinionated nature and simplicity; and Typescript as the language because it gives way less headache than Javascript in runtime. While the DBMS in this repo is SQLite, the one running in the live version of this project is <b>MariaDB</b>, manipulated solely by the <b>Sequelize</b> ORM (<i>you can configure either tho</i> &#128521). All of this is being mediated by a <b>Nginx</b> server working as a reverse proxy; both in a <b>Docker</b> container orchestrated by <b>Docker Compose</b>. So, in summary:
   <br>&nbsp;
   </div>
   <div align="center">
@@ -39,7 +39,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
         </tr>
         <tr>
             <td>MariaDB</td>
-            <td>Database</td>
+            <td>DBMS</td>
         <tr>
             <td>Sequelize</td>
             <td>ORM</td>
@@ -57,7 +57,9 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 ## Setup &nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue">
 
-- First, be sure that you have Node.js! If not, click <a href="https://nodejs.org/en/download" target="_blank">here</a>
+- First, be sure that you have Docker installed! If not, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to do it.
 - Download the source code, direct on github or using: <br>
-  `git clone https://github.com/bruno-iskeiti/Amala-API.git`
-- Inside the newly downloaded 'Amala API' folder, you'll find a file named "Makefile"
+  `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`
+- Inside the 'Amala API' folder, you'll find a file named "Makefile". It has commands to make it easier to install and configure the application! To setup the application, just use: <br>
+`$ makefile setup`
+Fret not! This makefile just downloads the necessary `Node.js` and `Nginx` images from Dockerhub. 
