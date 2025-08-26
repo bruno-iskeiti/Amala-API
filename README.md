@@ -1,8 +1,6 @@
-<h2 align="center">
-![project logo] (https://github.com/bruno-iskeiti/Amala-API/blob/main/public/images/logo.png?raw=true)
-A fan-made *Shin Megami Tensei* REST API!
-<br>&nbsp;
-</h2>
+![project logo](https://github.com/bruno-iskeiti/Amala-API/blob/050577deca60b4a524f4bfb612cf9c1abed7e529/public/images/logo.png)
+<h2 align="center">A fan-made **Shin Megami Tensei** REST API!</h2>
+
 <h2>Table of Contents :D</h2>
 
 * **What is Amala API?**
