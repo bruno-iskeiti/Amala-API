@@ -75,4 +75,12 @@ Scraping from <a href="#">MegaTen Wiki</a>, using a simple python scrapper (it's
 
 > <i>Why does it has just the Nocturne version of the information?</i>
 
-The reason for the lack of other games information **(YET)** is simple: I'm a solo dev with a non-tech job. It is hard to maintain a project like this.
+The reason for the lack of other games' information **(YET)** is simple: I'm a solo dev with a non-tech job. It is hard to maintain a project like this.
+
+> <i>I liked the project! How can I contribute?</i>
+
+Being 100% honest here, I know that the SMT community has some amazing devs, waaay better than me. So, if you like the idea, you can just do the usual of open source projects (forks, new branches, etc). I do not accept money as support, but your programming knowledge is absolutly MORE than welcome!
+
+## Trivia
+
+>1. did you know that shoji meguro was the <i>director</i> of Megami Ibunroku Persona? Weird, I know!
