@@ -12,10 +12,10 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 - [FAQ](#faq)
 - [Trivia](#trivia)
 
-<h2>What is Amala API?</h2>
+## What is Amala API?
   <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title may suggest, this project is a REST API for you to query information about the <i>Shin Megami Tensei</i> games'  characters. The idea of this project is to bring to SMT fans a resource to do cool stuff, just like pokémon fans with <a href="https://pokeapi.co">PokeAPI</a>. This is a very simple project written in <b>Typescript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is needed to do http <code>POST</code>, <code>PUT</code> and <code>DELETE</code> request; buuut, you can make as many <code>GET</code> requests as you like it!</div>
 
-<h2>More technical details</h2>
+## More technical details
   <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This is indeed a passion project, <b>but</b>, at the same time, one for my <i>portfolio</i> too :D. So... yeah, I think that it is a really good idea to show a little how the project was done to my (maybe) future employers.
   <br>&nbsp;&nbsp;&nbsp;&nbsp;As stated in the last section, the technology stack used for this project is: <b>Express.js</b> as the backend framework, with the majority of the code written in <b>Typecript</b>, and, of course, running in the <b>Node.js</b> environment. I chose Express.js as the framework for its unopinionated nature and simplicity; and Typescript as the language because it gives way less headache than Javascript in runtime. While the DBMS in this repo is SQLite, the one running in the live version of this project is <b>MariaDB</b>, manipulated solely by the <b>Sequelize</b> ORM (<i>you can configure either tho</i> &#128521). All of this is being mediated by a <b>Nginx</b> server working as a reverse proxy; both in a <b>Docker</b> container orchestrated by <b>Docker Compose</b>. So, in summary:
   <br>&nbsp;
@@ -52,7 +52,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
       </table>
   </div>
 
-<h2>Setup <img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue"></h2>
+## Setup ![Static Badge](https://img.shields.io/badge/typescript-ver._5.9.2-blue)
 First, be sure to have Docker installed! If you don't, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it.
 - Download the source code, direct on github or using: <br>
   `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`<br>
