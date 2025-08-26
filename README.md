@@ -8,7 +8,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 - [What is Amala API?](#what-is-amala-api)
 - [More technical details](#more-technical-details)
-- [Setup](#setup)
+- [Setup](https://github.com/bruno-iskeiti/Amala-API/tree/main?tab=readme-ov-file#setup-)
 - [FAQ](#faq)
 - [Trivia](#trivia)
 
