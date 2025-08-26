@@ -20,7 +20,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 <h2>More technical details</h2>
   <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This is indeed a passion project, <b>but</b>, at the same time, one for my <i>portfolio</i> too :D. So... yeah, I think that it is a really good idea to show a little how the project was done to my (maybe) future employers.
-  <br>&nbsp;&nbsp;&nbsp;&nbsp;As stated in the last section, the main technology used for this project is <b>Express.js</b> as the backend framework, with the majority of the code written in <b>Typecript</b>, and, of course, running in the <b>Node.js</b> environment. I chose Express.js as the framework for its unopinionated nature and simplicity; and Typescript as the language because it gives less headache than Javascript in runtime. The database running in the live version of this project is <b>MariaDB</b>, manipulated solely by the <b>Sequelize</b> ORM (<i>object relational mapper</i> &#128521). So, in summary:
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;As stated in the last section, the technology stack used for this project is: <b>Express.js</b> as the backend framework, with the majority of the code written in <b>Typecript</b>, and, of course, running in the <b>Node.js</b> environment. I chose Express.js as the framework for its unopinionated nature and simplicity; and Typescript as the language because it gives way less headache than Javascript in runtime. The database running in the live version of this project is <b>MariaDB</b>, manipulated solely by the <b>Sequelize</b> ORM (<i>object relational mapper</i> &#128521). All of this is being mediated by a <b>Nginx</b> server working as a reverse proxy; both in a <b>Docker</b> container orchestrated by <b>Docker Compose</b>. So, in summary:
   <br>&nbsp;
   </div>
   <div align="center">
@@ -56,3 +56,15 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
   </div>
 
 ## Setup &nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue">
+#### Pre-requesites:
+&nbsp;&nbsp;&nbsp;&nbsp;You'll need: 
+* Node.js;
+* Maybe programming experience (?) but idk I assume you'd already have it at this point
+
+All other dependencies (like Express.js and the TS compiler) will be downloaded via npm in the tutorial!
+
+#### Let's get it started!
+
+* Download the source code, direct on github or using:
+    `git clone https://github.com/bruno-iskeiti/Amala-API.git`
+* Inside the repo, you'll be using 
