@@ -53,14 +53,12 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
   </div>
 
 ## Setup &nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue">
-- First, be sure to have Docker installed! If not, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it. <br><br>
-- Download the source code, direct on github or using: <br>
-  `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`<br><br>
-- Inside the 'Amala API' folder, you'll find a file named "Makefile". It has commands to make it easier to install and configure the application! To setup the application with a built-in SQLite db, just use: <br>
+First, be sure to have Docker installed! If not, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it. Download the source code, direct on github or using: <br>
+  `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`<br>
+Inside the 'Amala API' folder, you'll find a file named "Makefile". It has commands to make it easier to install and configure the application! To setup the application with a built-in SQLite db, just use: <br>
 `$ makefile setup`<br>
-And <i>voilà</i>! You have Amala API in a docker container!<br><br>
-- If you want a fast way to run it. Just do: <br>
+And <i>voilà</i>! You have Amala API in a docker container! If you want a fast way to run it. Just do: <br>
 `$ makefile serve`<br>
-It will run serve at http://localhost:6585. Try it!<br><br>
-- Otherwise, if you want MariaDB, just use:<br>
+It will run serve at http://localhost:6585. Try it!<br>
+Otherwise, if you want MariaDB, just use:<br>
 `$ makefile setup-mariadb`
