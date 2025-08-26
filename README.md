@@ -57,7 +57,7 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 ## Setup &nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue">
 
-- First, be sure that you have Node.js! If not, click [here](https://nodejs.org/en/download)
+- First, be sure that you have Node.js! If not, click <a href="https://nodejs.org/en/download" target="_blank">here</a>
 - Download the source code, direct on github or using: <br>
   `git clone https://github.com/bruno-iskeiti/Amala-API.git`
 - Inside the newly downloaded 'Amala API' folder, you'll find a file named "Makefile"
