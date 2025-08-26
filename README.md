@@ -8,12 +8,9 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 - **What is Amala API?**
 - **More technical details**
-- **API Local Setup**
-  - **Just serving with Node.js**
-  - **Using nginx as reverse proxy**
-- **DB Local Setup**
-  - **MariaDB/MySQL setup (recommended)**
-  - **SQLite (if you just want to mess with it without much tinkering!)**
+- **Setup**
+- **FAQ**
+- **Funny Trivia!**
 
 <h2 size="300px">What is Amala API?</h2>
   <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title may suggest, this project is a REST API for you to query information about the <i>Shin Megami Tensei</i> games'  characters. The idea of this project is to bring to SMT fans a resource to do cool stuff, just like pokémon fans with <a href="https://pokeapi.co">PokeAPI</a>. This is a very simple project written in <b>Typescript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is needed to do http <code>POST</code>, <code>PUT</code> and <code>DELETE</code> request; buuut, you can make as many <code>GET</code> requests as you like it!</div>
@@ -56,10 +53,14 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
   </div>
 
 ## Setup &nbsp;<img alt="Static Badge" src="https://img.shields.io/badge/typescript-ver._5.9.2-blue">
-
-- First, be sure that you have Docker installed! If not, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to do it.
+- First, be sure to have Docker installed! If not, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it.
 - Download the source code, direct on github or using: <br>
   `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`
-- Inside the 'Amala API' folder, you'll find a file named "Makefile". It has commands to make it easier to install and configure the application! To setup the application, just use: <br>
+- Inside the 'Amala API' folder, you'll find a file named "Makefile". It has commands to make it easier to install and configure the application! To setup the application with a built-in SQLite db, just use: <br>
 `$ makefile setup`
-Fret not! This makefile just downloads the necessary `Node.js` and `Nginx` images from Dockerhub. 
+And <i>voilà</i>! You have Amala API in a docker container!
+- If you want a fast way to run it. Just do: <br>
+`$ makefile serve`
+It will run serve at http://localhost:6585. Try it!
+- Otherwise, if you want MariaDB, just use:
+`$ makefile setup-mariadb`
