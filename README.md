@@ -8,79 +8,80 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 
 - [What is Amala API?](#what-is-amala-api)
 - [More technical details](#more-technical-details)
-- [Setup](https://github.com/bruno-iskeiti/Amala-API/tree/main?tab=readme-ov-file#setup-)
+- [Setup](#setup)
 - [FAQ](#faq)
 - [Trivia](#trivia)
 
 ## What is Amala API?
-  <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title may suggest, this project is a REST API for you to query information about the <i>Shin Megami Tensei</i> games'  characters. The idea of this project is to bring to SMT fans a resource to do cool stuff, just like pokémon fans with <a href="https://pokeapi.co">PokeAPI</a>. This is a very simple project written in <b>Typescript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is needed to do http <code>POST</code>, <code>PUT</code> and <code>DELETE</code> request; buuut, you can make as many <code>GET</code> requests as you like it!
-  </div>
+<div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title suggests, this project is a REST API that lets you query information about the <i>Shin Megami Tensei</i> games' characters. The goal of this project is to provide SMT fans a resource to do cool things, similar to what Pokémon fans have with <a href="https://pokeapi.co">PokeAPI</a>. This is a simple project written in <b>TypeScript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is required to perform <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> requests; however, you can make as many <code>GET</code> requests as you like!
+</div>
 <br>
 
-> **BIG DISCLAIMER: as of I'm writing this, Amala API's Database only contains <i>Nocturne</i> data.**
+> **BIG DISCLAIMER:** As of writing this, Amala API's database only contains <i>Nocturne</i> data.
 
 ## More technical details
-  <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This is indeed a passion project, <b>but</b>, at the same time, one for my <i>portfolio</i> too :D. So... yeah, I think that it is a really good idea to show a little how the project was done to my (maybe) future employers.
-  <br>&nbsp;&nbsp;&nbsp;&nbsp;As stated in the last section, the technology stack used for this project is: <b>Express.js</b> as the backend framework, with the majority of the code written in <b>Typecript</b>, and, of course, running in the <b>Node.js</b> environment. I chose Express.js as the framework for its unopinionated nature and simplicity; and Typescript as the language because it gives way less headache than Javascript in runtime. While the DBMS in this repo is SQLite, the one running in the live version of this project is <b>MariaDB</b>, manipulated solely by the <b>Sequelize</b> ORM (<i>you can configure either tho</i> &#128521). All of this is being mediated by a <b>Nginx</b> server working as a reverse proxy; both in a <b>Docker</b> container orchestrated by <b>Docker Compose</b>. So, in summary:
-  <br>&nbsp;
-  </div>
-  <div align="center">
-      <table>
-        <tr>
-            <td><b><h3>Technology</h3></b></td>
-            <td><b><h3>Role</h3></b></td>
-        </tr>
-        <tr>
-            <td>Typescript</td>
-            <td>Language</td>
-        </tr>
-        <tr>
-            <td>Express.js</td>
-            <td>Framework</td>
-        </tr>
-        <tr>
-            <td>MariaDB</td>
-            <td>DBMS</td>
-        <tr>
-            <td>Sequelize</td>
-            <td>ORM</td>
-        </tr>
-        <tr>
-            <td>Nginx</td>
-            <td>Reverse proxy</td>
-        </tr>
-        <tr>
-            <td>Docker</td>
-            <td>Container</td>
-        </tr>
-      </table>
-  </div>
+<div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This is indeed a passion project, <b>but</b> also part of my <i>portfolio</i> :D. I think it's a good idea to show how the project was made to potential future employers.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;As mentioned above, the technology stack for this project includes <b>Express.js</b> as the backend framework, with most of the code written in <b>TypeScript</b>, running in the <b>Node.js</b> environment. I chose Express.js for its unopinionated nature and simplicity, and TypeScript because it reduces runtime headaches compared to JavaScript. While the DBMS in this repo is SQLite, the live version uses <b>MariaDB</b>, managed solely by the <b>Sequelize</b> ORM (<i>you can configure either</i> &#128521). All of this is served through a <b>Nginx</b> reverse proxy running in a <b>Docker</b> container orchestrated by <b>Docker Compose</b>. In summary:
+<br>&nbsp;
+</div>
+<div align="center">
+  <table>
+    <tr>
+        <td><b><h3>Technology</h3></b></td>
+        <td><b><h3>Role</h3></b></td>
+    </tr>
+    <tr>
+        <td>TypeScript</td>
+        <td>Language</td>
+    </tr>
+    <tr>
+        <td>Express.js</td>
+        <td>Framework</td>
+    </tr>
+    <tr>
+        <td>MariaDB</td>
+        <td>DBMS</td>
+    </tr>
+    <tr>
+        <td>Sequelize</td>
+        <td>ORM</td>
+    </tr>
+    <tr>
+        <td>Nginx</td>
+        <td>Reverse proxy</td>
+    </tr>
+    <tr>
+        <td>Docker</td>
+        <td>Container</td>
+    </tr>
+  </table>
+</div>
 
 ## Setup ![Static Badge](https://img.shields.io/badge/typescript-ver._5.9.2-blue)
-First, be sure to have Docker installed! If you don't, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it.
-- Download the source code, direct on github or using: <br>
+First, make sure Docker is installed! If you don't have it, click <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">here</a> to see how to download it.
+- Download the source code directly from GitHub or use: <br>
   `$ git clone https://github.com/bruno-iskeiti/Amala-API.git`<br>
-- Inside the 'Amala API' folder, you'll find a file named "Makefile". It has commands to make it easier to install and configure the application! To setup the application with a built-in SQLite db, just use: <br>
+- Inside the 'Amala API' folder, you'll find a file named "Makefile". It contains commands to make installation and configuration easier. To set up the application with a built-in SQLite database, simply run: <br>
 `$ makefile setup`<br>
-- And <i>voilà</i>! You have Amala API in a docker container! If you want a fast way to run it. Just do: <br>
+- And <i>voilà</i>! You now have Amala API running in a Docker container. If you want a quick way to run it, just use: <br>
 `$ makefile serve`<br>
-- It will run serve at http://localhost:6585. Try it!<br>
-- Otherwise, if you want MariaDB, just use:<br>
+- The server will run at http://localhost:6585. Try it!<br>
+- If you prefer MariaDB, just run:<br>
 `$ makefile setup-mariadb`
 
 ## FAQ
 > <i>Where does this data come from?</i>
 
-Scraping from <a href="#">MegaTen Wiki</a>, using a simple python scrapper (it's in the misc folder).
+The data is scraped from <a href="#">MegaTen Wiki</a> using a simple Python scraper (located in the `misc` folder).
 
-> <i>Why does it has just the Nocturne version of the information?</i>
+> <i>Why does it only contain the Nocturne version?</i>
 
-The reason for the lack of other games' information **(YET)** is simple: I'm a solo dev with a non-tech job. It is hard to maintain a project like this.
+The reason for the lack of other games' data **(YET)** is simple: I'm a solo developer with a non-tech job. Maintaining a project like this is challenging.
 
-> <i>I liked the project! How can I contribute?</i>
+> <i>I like this project! How can I contribute?</i>
 
-Being 100% honest here, I know that the SMT community has some amazing devs, waaay better than me. So, if you like the idea, you can just do the usual of open source projects (forks, new branches, etc). I do not accept money as support, but your programming knowledge is absolutly MORE than welcome!
+Honestly, the SMT community has some amazing developers, far more skilled than me. If you like this project, you can contribute as you would in any open-source project (fork, create branches, submit pull requests, etc.). I don't accept monetary support, but your programming knowledge is **absolutely welcome!**
 
 ## Trivia
 
->1. did you know that shoji meguro was the <i>director</i> of Megami Ibunroku Persona? Weird, I know!
+>1. Did you know that Shoji Meguro was the <i>director</i> of Megami Ibunroku Persona? Weird, I know!
