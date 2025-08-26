@@ -26,8 +26,8 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
   <div align="center">
       <table>
         <tr>
-            <td><b>Technology</b></td>
-            <td><b>Role</b></td>
+            <td><b><h3>Technology</h3></b></td>
+            <td><b><h3>Role</h3></b></td>
         </tr>
         <tr>
             <td>Typescript</td>
