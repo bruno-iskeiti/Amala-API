@@ -1,18 +1,22 @@
+
 <h2 align="center">
 <img src="https://github.com/bruno-iskeiti/Amala-API/blob/a4ef57403c275cc4ecaa50aa9e556972a98a1226/public/images/logo.png" alt="project logo"> <br>
 A fan-made <i>Shin Megami Tensei</i> REST API!
 <br>&nbsp;
 </h2>
 
+information TBA.
+
+<!--
 ## Table of Contents
 
 - [What is Amala API?](#what-is-amala-api)
 - [More technical details](#more-technical-details)
 - [Setup](#setup)
 - [Trivia](#trivia)
-<!--
+
 - [FAQ](#faq)
--->
+
 
 ## What is Amala API?
 <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title suggests, this project is a REST API that lets you query information about the <i>Shin Megami Tensei</i> games' characters. The goal of this project is to provide SMT fans a resource to do cool things, similar to what Pokémon fans have with <a href="https://pokeapi.co">PokeAPI</a>. This is a simple project written in <b>TypeScript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is required to perform <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> requests; however, you can make as many <code>GET</code> requests as you like!
@@ -71,7 +75,7 @@ First, make sure Docker is installed! If you don't have it, click <a href="https
 - If you prefer MariaDB, just run:<br>
 `$ makefile setup-mariadb`
 
-<!--
+
 ## FAQ
 > <i>Where does this data come from?</i>
 
@@ -84,7 +88,8 @@ The reason for the lack of other games' data **(YET)** is simple: I'm a solo dev
 > <i>I like this project! How can I contribute?</i>
 
 Honestly, the SMT community has some amazing developers, far more skilled than me. If you like this project, you can contribute as you would in any open-source project (fork, create branches, submit pull requests, etc.). I don't accept monetary support, but your programming knowledge is **absolutely welcome!**
--->
+
 ## Trivia
 
 >1. Did you know that Shoji Meguro was the <i>director</i> of Megami Ibunroku Persona? Weird, I know!
+-->
