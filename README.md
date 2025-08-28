@@ -9,7 +9,9 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 - [What is Amala API?](#what-is-amala-api)
 - [More technical details](#more-technical-details)
 - [Setup](#setup)
+<!--
 - [FAQ](#faq)
+-->
 - [Trivia](#trivia)
 
 ## What is Amala API?
@@ -69,10 +71,11 @@ First, make sure Docker is installed! If you don't have it, click <a href="https
 - If you prefer MariaDB, just run:<br>
 `$ makefile setup-mariadb`
 
+<!--
 ## FAQ
 > <i>Where does this data come from?</i>
 
-The data is scraped from <a href="#">MegaTen Wiki</a> using a simple Python scraper (located in the `misc` folder).
+The data is scraped from <a href="#">MegaTen Wiki</a> using a simple scraper (located in the `misc` folder).
 
 > <i>Why does it only contain the Nocturne version?</i>
 
@@ -81,7 +84,7 @@ The reason for the lack of other games' data **(YET)** is simple: I'm a solo dev
 > <i>I like this project! How can I contribute?</i>
 
 Honestly, the SMT community has some amazing developers, far more skilled than me. If you like this project, you can contribute as you would in any open-source project (fork, create branches, submit pull requests, etc.). I don't accept monetary support, but your programming knowledge is **absolutely welcome!**
-
+-->
 ## Trivia
 
 >1. Did you know that Shoji Meguro was the <i>director</i> of Megami Ibunroku Persona? Weird, I know!
