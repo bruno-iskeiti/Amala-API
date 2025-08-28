@@ -9,10 +9,10 @@ A fan-made <i>Shin Megami Tensei</i> REST API!
 - [What is Amala API?](#what-is-amala-api)
 - [More technical details](#more-technical-details)
 - [Setup](#setup)
+- [Trivia](#trivia)
 <!--
 - [FAQ](#faq)
 -->
-- [Trivia](#trivia)
 
 ## What is Amala API?
 <div align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As the title suggests, this project is a REST API that lets you query information about the <i>Shin Megami Tensei</i> games' characters. The goal of this project is to provide SMT fans a resource to do cool things, similar to what Pokémon fans have with <a href="https://pokeapi.co">PokeAPI</a>. This is a simple project written in <b>TypeScript and Express.js</b>, running in the <b>Node.js</b> environment. For security reasons, authentication is required to perform <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> requests; however, you can make as many <code>GET</code> requests as you like!
